@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>product list</title>
+     <!--Bootstamp CDN link to get the support of bootstamp-->
+        <link rel="stylesheet"
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">     
+  <!--This is java script validate code location-->
+    <script src="FormValidation.js"></script>
+</head>
+
+
+<body>
+	<div class="container mb-5 text-center">
+	    <h2 class="text-center font-italic mb-1">Save Product data......</h2>
+	    <form method="post"	action="./ProductServlet" enctype="multipart/form-data" onsubmit="return validateForm()">
+			
+			<div class="form-group">
+				<label class="font-italic font-weight-bold" for="proId">Product Id:</label>
+				<input type="text" class="form-control-sm" id="proId" name="proId" required/>
+			</div>
+			
+			
+			<div class="form-group">
+				<label class="font-italic font-weight-bold" for="proName">Product Name:</label>
+				<input type="text" class="form-control-sm" id="proName" name="proName" required/>
+			</div>
+			
+			
+			<div class="form-group">
+				<label class="font-italic font-weight-bold" for="proPrice">Product Price:</label>
+				<input type="number" class="form-control-sm" id="proPrice" name="proPrice" required/>
+			</div>
+			
+			
+			<div class="form-group">
+				<label class="font-italic font-weight-bold" for="proBand">Product Band:</label>
+				<input type="text" class="form-control-sm" id="proBand" name="proBand" required/>
+			</div>
+			
+			
+			<div class="form-group">
+				<label class="font-italic font-weight-bold" for="proMade">Product Made:</label>
+				<input type="text" class="form-control-sm" id="proMade" name="proMade" required/>
+			</div>
+			
+			
+			<div class="form-group">
+				<label class="font-italic font-weight-bold" for="proMdate">Product Mdate:</label>
+				<input type="date" class="form-control-sm" id="proMdate" name="proMdate" required/>
+			</div>
+			
+			
+			<div class="form-group">
+				<label class="font-italic font-weight-bold" for="proExdate">Product Exdate:</label>
+				<input type="date" class="form-control-sm" id="proExdate" name="proExdate" required/>
+			</div>
+			
+			
+			<div class="form-group">
+				<label class="font-italic font-weight-bold" for="proImage">Product Image:</label>
+				<input type="file" class="form-control-file-sm" id="proImage" name="proImage" accept="image/*" required/>
+			</div>
+			
+			<div>
+			     <input type="submit" class="btn btn-success" value="update product"/>
+		         <a href="productlist.jsp" class="btn btn-primary">List of Products</a>
+			</div>
+				
+		</form>		
+	</div>
+</body>
+</html>
